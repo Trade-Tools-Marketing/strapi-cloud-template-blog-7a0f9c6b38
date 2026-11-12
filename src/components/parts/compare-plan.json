@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_parts_compare_plans",
+  "info": {
+    "displayName": "Compare plan",
+    "description": "A plan in the plan comparison",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "period": {
+      "type": "string",
+      "default": "/year"
+    },
+    "commitment": {
+      "type": "string"
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "key": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    }
+  }
+}

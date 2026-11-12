@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_parts_guide_cards",
+  "info": {
+    "displayName": "Guide card",
+    "description": "A guide in the guides list (newest first)",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "topic": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageLabel": {
+      "type": "string"
+    }
+  }
+}

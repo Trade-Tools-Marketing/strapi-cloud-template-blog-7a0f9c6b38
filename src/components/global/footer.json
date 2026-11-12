@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": "Site footer",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "showLogo": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "component",
+      "component": "parts.footer-location",
+      "repeatable": true
+    },
+    "hours": {
+      "type": "string"
+    },
+    "social": {
+      "type": "component",
+      "component": "parts.social-link",
+      "repeatable": true
+    },
+    "partners": {
+      "type": "component",
+      "component": "parts.partner",
+      "repeatable": true
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "licence": {
+      "type": "string"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "legalLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    }
+  }
+}

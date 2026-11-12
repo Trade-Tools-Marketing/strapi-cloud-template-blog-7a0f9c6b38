@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_parts_nav_links",
+  "info": {
+    "displayName": "Header link",
+    "description": "Desktop header link",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "menu": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "services",
+        "locations"
+      ],
+      "default": "none"
+    }
+  }
+}

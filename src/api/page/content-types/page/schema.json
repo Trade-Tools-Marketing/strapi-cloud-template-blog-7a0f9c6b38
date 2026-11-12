@@ -4,29 +4,72 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": "A website page built from page blocks"
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
-      "type": "uid",
-      "targetField": "title"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "seo": {
       "type": "component",
       "component": "shared.seo",
       "repeatable": false
     },
+    "headerVariant": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "slim"
+      ],
+      "default": "full"
+    },
+    "footerVariant": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "slim"
+      ],
+      "default": "full"
+    },
+    "phone": {
+      "type": "string"
+    },
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "shared.slider"
+        "blocks.hero",
+        "blocks.trust-bar",
+        "blocks.text-image",
+        "blocks.feature-list",
+        "blocks.steps",
+        "blocks.card-grid",
+        "blocks.reviews",
+        "blocks.pricing",
+        "blocks.plan-compare",
+        "blocks.offer-grid",
+        "blocks.map-section",
+        "blocks.faq",
+        "blocks.call-band",
+        "blocks.credentials",
+        "blocks.before-after",
+        "blocks.gallery",
+        "blocks.guide-hub",
+        "blocks.guide-article",
+        "blocks.media",
+        "blocks.financing-band",
+        "blocks.small-print",
+        "blocks.embed",
+        "blocks.message"
       ]
     }
   }

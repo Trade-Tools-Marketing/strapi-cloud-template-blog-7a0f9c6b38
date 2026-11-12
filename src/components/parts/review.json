@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_parts_reviews",
+  "info": {
+    "displayName": "Review",
+    "description": "One customer review. Never invent reviews",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "town": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "integer",
+      "default": 5
+    }
+  }
+}

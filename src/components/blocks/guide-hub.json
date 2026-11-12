@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_blocks_guide_hubs",
+  "info": {
+    "displayName": "Guides list",
+    "description": "Featured guide, a grid of guide cards, topic filters and Load more",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "guides": {
+      "type": "component",
+      "component": "parts.guide-card",
+      "repeatable": true
+    },
+    "topics": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "filterMin": {
+      "type": "integer",
+      "default": 9
+    },
+    "pageSize": {
+      "type": "integer",
+      "default": 9
+    },
+    "loadMore": {
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "on",
+        "off"
+      ],
+      "default": "auto"
+    },
+    "loadMoreLabel": {
+      "type": "string",
+      "default": "Load more"
+    },
+    "loadMoreHref": {
+      "type": "string",
+      "default": "/guides/page/2/"
+    },
+    "defaultTopic": {
+      "type": "string"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream"
+      ],
+      "default": "white"
+    }
+  }
+}

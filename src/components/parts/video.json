@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_parts_videos",
+  "info": {
+    "displayName": "Video",
+    "description": "YouTube video or file, loads on tap",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "youtube": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thumbnailLabel": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "default": "Video"
+    }
+  }
+}

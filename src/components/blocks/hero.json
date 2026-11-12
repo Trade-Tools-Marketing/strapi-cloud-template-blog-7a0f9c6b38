@@ -1,0 +1,117 @@
+{
+  "collectionName": "components_blocks_heros",
+  "info": {
+    "displayName": "Hero",
+    "description": "Top section of a page: label, headline, text, Google rating, one button and a photo with the fox tail",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "boolean",
+      "default": true
+    },
+    "ratingSize": {
+      "type": "enumeration",
+      "enum": [
+        "inline",
+        "card"
+      ],
+      "default": "inline"
+    },
+    "priceLine": {
+      "type": "string"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "note": {
+      "type": "string"
+    },
+    "financing": {
+      "type": "boolean",
+      "default": false
+    },
+    "financingText": {
+      "type": "string"
+    },
+    "financingLinkLabel": {
+      "type": "string"
+    },
+    "financingHref": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "photoLabel": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "short"
+      ],
+      "default": "full"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "cream",
+        "white",
+        "light_blue"
+      ],
+      "default": "cream"
+    },
+    "photoSide": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
+    },
+    "media": {
+      "type": "boolean",
+      "default": true
+    },
+    "tail": {
+      "type": "boolean",
+      "default": true
+    },
+    "longHeadline": {
+      "type": "boolean",
+      "default": false
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

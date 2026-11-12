@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_faqs",
+  "info": {
+    "displayName": "FAQ",
+    "description": "Headline and 2–8 questions that open one at a time",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "component": "parts.faq-item",
+      "repeatable": true
+    },
+    "openOnLoad": {
+      "type": "integer",
+      "default": 1
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream"
+      ],
+      "default": "white"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

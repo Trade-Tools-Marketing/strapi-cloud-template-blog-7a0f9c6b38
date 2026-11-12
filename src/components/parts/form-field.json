@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_parts_form_fields",
+  "info": {
+    "displayName": "Form field",
+    "description": "A field in the callback form",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "tel",
+        "email"
+      ],
+      "default": "text"
+    },
+    "autoComplete": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "requiredMessage": {
+      "type": "string"
+    },
+    "optional": {
+      "type": "boolean",
+      "default": false
+    },
+    "multiline": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

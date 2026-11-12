@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_blocks_messages",
+  "info": {
+    "displayName": "Message",
+    "description": "Centred status message with buttons and link cards (Thank you page)",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "secondaryButton": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "cardsHeading": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream"
+      ],
+      "default": "white"
+    }
+  }
+}

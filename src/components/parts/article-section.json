@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_parts_article_sections",
+  "info": {
+    "displayName": "Article section",
+    "description": "Text, optionally followed by a photo or video",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    },
+    "media": {
+      "type": "component",
+      "component": "blocks.media",
+      "repeatable": false
+    }
+  }
+}

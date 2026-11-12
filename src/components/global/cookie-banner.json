@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_global_cookie_banners",
+  "info": {
+    "displayName": "Cookie banner",
+    "description": "Cookie consent bar",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "show": {
+      "type": "boolean",
+      "default": true
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "policyLabel": {
+      "type": "string",
+      "default": "Privacy policy"
+    },
+    "policyHref": {
+      "type": "string",
+      "default": "/privacy-policy/"
+    },
+    "acceptLabel": {
+      "type": "string",
+      "default": "Accept"
+    },
+    "declineLabel": {
+      "type": "string",
+      "default": "Decline"
+    },
+    "dismissible": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

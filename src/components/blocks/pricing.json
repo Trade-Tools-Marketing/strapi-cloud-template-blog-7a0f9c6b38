@@ -1,0 +1,114 @@
+{
+  "collectionName": "components_blocks_pricings",
+  "info": {
+    "displayName": "Pricing",
+    "description": "Starting price, package cards, plan cards or a plan table",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "range",
+        "packages",
+        "plans",
+        "table"
+      ],
+      "default": "range"
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "anchorId": {
+      "type": "string"
+    },
+    "priceLabel": {
+      "type": "string",
+      "default": "Starting at"
+    },
+    "showPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "price": {
+      "type": "string"
+    },
+    "priceNote": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "showFinancing": {
+      "type": "boolean",
+      "default": true
+    },
+    "financingText": {
+      "type": "string"
+    },
+    "financingLinkLabel": {
+      "type": "string"
+    },
+    "financingHref": {
+      "type": "string"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "packages": {
+      "type": "component",
+      "component": "parts.package",
+      "repeatable": true
+    },
+    "plans": {
+      "type": "component",
+      "component": "parts.plan-card",
+      "repeatable": true
+    },
+    "columns": {
+      "type": "component",
+      "component": "parts.plan-column",
+      "repeatable": true
+    },
+    "rows": {
+      "type": "component",
+      "component": "parts.table-row",
+      "repeatable": true
+    },
+    "tableNote": {
+      "type": "string"
+    },
+    "joinLabel": {
+      "type": "string",
+      "default": "Join the plan"
+    },
+    "popularLabel": {
+      "type": "string",
+      "default": "Most popular"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream",
+        "light_blue"
+      ],
+      "default": "white"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

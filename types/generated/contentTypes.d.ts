@@ -579,7 +579,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
-    description: 'Define global settings';
+    description: 'Set once for the whole site';
     displayName: 'Global';
     pluralName: 'globals';
     singularName: 'global';
@@ -588,20 +588,36 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    bookHref: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'/contact/#book'>;
+    callHref: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'tel:+17784864772'>;
+    cookieBanner: Schema.Attribute.Component<'global.cookie-banner', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    defaultSeo: Schema.Attribute.Component<'shared.seo', false>;
-    favicon: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
+    footer: Schema.Attribute.Component<'global.footer', false>;
+    googleRating: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'4.7'>;
+    googleReviewCount: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'2,800+'>;
+    googleReviewsUrl: Schema.Attribute.String & Schema.Attribute.Required;
+    header: Schema.Attribute.Component<'global.header', false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::global.global'
     > &
       Schema.Attribute.Private;
+    phone: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'(778) 486-4772'>;
+    phoneBar: Schema.Attribute.Component<'global.phone-bar', false>;
     publishedAt: Schema.Attribute.DateTime;
-    siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
-    siteName: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -611,6 +627,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiPagePage extends Struct.CollectionTypeSchema {
   collectionName: 'pages';
   info: {
+    description: 'A website page built from page blocks';
     displayName: 'Page';
     pluralName: 'pages';
     singularName: 'page';
@@ -622,14 +639,47 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    footerVariant: Schema.Attribute.Enumeration<['full', 'slim']> &
+      Schema.Attribute.DefaultTo<'full'>;
+    headerVariant: Schema.Attribute.Enumeration<['full', 'slim']> &
+      Schema.Attribute.DefaultTo<'full'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
       Schema.Attribute.Private;
+    phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    sections: Schema.Attribute.DynamicZone<['shared.slider']>;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'blocks.hero',
+        'blocks.trust-bar',
+        'blocks.text-image',
+        'blocks.feature-list',
+        'blocks.steps',
+        'blocks.card-grid',
+        'blocks.reviews',
+        'blocks.pricing',
+        'blocks.plan-compare',
+        'blocks.offer-grid',
+        'blocks.map-section',
+        'blocks.faq',
+        'blocks.call-band',
+        'blocks.credentials',
+        'blocks.before-after',
+        'blocks.gallery',
+        'blocks.guide-hub',
+        'blocks.guide-article',
+        'blocks.media',
+        'blocks.financing-band',
+        'blocks.small-print',
+        'blocks.embed',
+        'blocks.message',
+      ]
+    >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    slug: Schema.Attribute.UID<'title'>;
-    title: Schema.Attribute.String;
+    slug: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

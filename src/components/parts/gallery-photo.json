@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_parts_gallery_photos",
+  "info": {
+    "displayName": "Gallery photo",
+    "description": "Photo with optional Day/Night tag",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

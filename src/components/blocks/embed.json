@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_embeds",
+  "info": {
+    "displayName": "Embed",
+    "description": "Third-party widget in a panel (online booking, store). Placeholder until a URL is set",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "height": {
+      "type": "integer",
+      "default": 720
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "light_blue",
+        "cream",
+        "white"
+      ],
+      "default": "light_blue"
+    }
+  }
+}

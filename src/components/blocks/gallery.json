@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_gallerys",
+  "info": {
+    "displayName": "Photo gallery",
+    "description": "Grid of photos that open full screen",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "photos": {
+      "type": "component",
+      "component": "parts.gallery-photo",
+      "repeatable": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream",
+        "light_blue"
+      ],
+      "default": "white"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_parts_packages",
+  "info": {
+    "displayName": "Package",
+    "description": "Pricing package card",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "included": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

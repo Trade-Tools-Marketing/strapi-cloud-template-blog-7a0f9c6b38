@@ -1,0 +1,109 @@
+{
+  "collectionName": "components_blocks_text_images",
+  "info": {
+    "displayName": "Text + Image",
+    "description": "Photo beside a headline, text, up to two buttons and arrow links",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "secondaryButton": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoName": {
+      "type": "string"
+    },
+    "logoMinWidth": {
+      "type": "integer"
+    },
+    "media": {
+      "type": "enumeration",
+      "enum": [
+        "photo",
+        "logo",
+        "none"
+      ],
+      "default": "photo"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "photoLabel": {
+      "type": "string"
+    },
+    "planTeaser": {
+      "type": "component",
+      "component": "parts.plan-teaser",
+      "repeatable": false
+    },
+    "offerCard": {
+      "type": "component",
+      "component": "parts.offer-card",
+      "repeatable": false
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream",
+        "light_blue",
+        "navy"
+      ],
+      "default": "white"
+    },
+    "photoSide": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
+    },
+    "photoMobile": {
+      "type": "enumeration",
+      "enum": [
+        "above",
+        "below"
+      ],
+      "default": "above"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

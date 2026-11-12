@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_phone_bars",
+  "info": {
+    "displayName": "Phone bar (Book + Call)",
+    "description": "Bottom bar on phones with Book online and Call now",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "show": {
+      "type": "boolean",
+      "default": true
+    },
+    "bookHref": {
+      "type": "string"
+    },
+    "callHref": {
+      "type": "string"
+    }
+  }
+}
