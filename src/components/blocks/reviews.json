@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_blocks_reviewss",
+  "info": {
+    "displayName": "Reviews",
+    "description": "Google rating card and 1–6 review cards",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "showHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "reviews": {
+      "type": "component",
+      "component": "parts.review",
+      "repeatable": true
+    },
+    "showLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "rating": {
+      "type": "boolean",
+      "default": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "navy",
+        "cream",
+        "white"
+      ],
+      "default": "navy"
+    }
+  }
+}

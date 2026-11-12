@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_parts_faq_items",
+  "info": {
+    "displayName": "FAQ question",
+    "description": "Question and answer",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

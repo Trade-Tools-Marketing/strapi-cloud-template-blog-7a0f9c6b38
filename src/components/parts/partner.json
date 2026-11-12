@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_parts_partners",
+  "info": {
+    "displayName": "Partner logo",
+    "description": "Partner logo in the footer",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "newTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "minWidth": {
+      "type": "integer"
+    }
+  }
+}

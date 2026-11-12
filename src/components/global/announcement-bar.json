@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_global_announcement_bars",
+  "info": {
+    "displayName": "Announcement bar",
+    "description": "Navy message bar above the header. Never on Campaign, Thank You or 404",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "dismissible": {
+      "type": "boolean",
+      "default": true
+    },
+    "label": {
+      "type": "string",
+      "default": "Announcement"
+    }
+  }
+}

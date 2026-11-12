@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_parts_plan_columns",
+  "info": {
+    "displayName": "Plan table column",
+    "description": "One plan column in the pricing table",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

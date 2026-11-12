@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_small_prints",
+  "info": {
+    "displayName": "Small print",
+    "description": "Small grey terms-and-conditions text",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks",
+      "required": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream"
+      ],
+      "default": "white"
+    }
+  }
+}

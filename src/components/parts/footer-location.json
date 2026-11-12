@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_parts_footer_locations",
+  "info": {
+    "displayName": "Footer location",
+    "description": "Location in the footer",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lines": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_parts_plan_teasers",
+  "info": {
+    "displayName": "Plan teaser",
+    "description": "Service Partner Plan teaser card (Text + Image extra slot)",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pricePrefix": {
+      "type": "string",
+      "default": "From"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "period": {
+      "type": "string",
+      "default": "a year"
+    },
+    "points": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

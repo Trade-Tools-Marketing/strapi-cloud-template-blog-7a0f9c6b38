@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_parts_mega_columns",
+  "info": {
+    "displayName": "Mega menu column",
+    "description": "Services mega menu column",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    }
+  }
+}

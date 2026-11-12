@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_parts_plan_cards",
+  "info": {
+    "displayName": "Plan card",
+    "description": "Maintenance plan pricing card",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "period": {
+      "type": "string",
+      "default": "a year"
+    },
+    "benefits": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "ctaLabel": {
+      "type": "string",
+      "default": "See the plan"
+    },
+    "ctaVariant": {
+      "type": "enumeration",
+      "enum": [
+        "secondary",
+        "primary"
+      ],
+      "default": "secondary"
+    },
+    "href": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string",
+      "default": "Cancel anytime"
+    },
+    "badge": {
+      "type": "string"
+    }
+  }
+}

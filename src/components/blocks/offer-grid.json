@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_blocks_offer_grids",
+  "info": {
+    "displayName": "Offers",
+    "description": "Row of offer cards",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "offers": {
+      "type": "component",
+      "component": "parts.offer-card",
+      "repeatable": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "master",
+        "detailed"
+      ],
+      "default": "master"
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream",
+        "light_blue"
+      ],
+      "default": "white"
+    }
+  }
+}

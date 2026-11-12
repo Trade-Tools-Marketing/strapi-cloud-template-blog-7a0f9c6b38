@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_parts_social_links",
+  "info": {
+    "displayName": "Social link",
+    "description": "Social icon link",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "facebook",
+        "instagram",
+        "linkedin"
+      ],
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

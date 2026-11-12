@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_blocks_financing_bands",
+  "info": {
+    "displayName": "Financing band",
+    "description": "Ticks and a link on the left, Financeit logo on the right",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Prefer monthly payments?"
+    },
+    "points": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "showLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "showNote": {
+      "type": "boolean",
+      "default": true
+    },
+    "note": {
+      "type": "string"
+    },
+    "showLogo": {
+      "type": "boolean",
+      "default": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "light_blue",
+        "cream",
+        "white"
+      ],
+      "default": "light_blue"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

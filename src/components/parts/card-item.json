@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_parts_card_items",
+  "info": {
+    "displayName": "Card",
+    "description": "Card in a card grid",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "href": {
+      "type": "string"
+    },
+    "linkLabel": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "heating",
+        "plumbing",
+        "drains",
+        "electrical",
+        "lighting",
+        "tick"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageLabel": {
+      "type": "string"
+    }
+  }
+}

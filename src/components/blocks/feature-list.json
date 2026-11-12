@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_blocks_feature_lists",
+  "info": {
+    "displayName": "Feature list",
+    "description": "Headline with a list of points, with a photo, as cards or in two columns",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "intro": {
+      "type": "text"
+    },
+    "points": {
+      "type": "component",
+      "component": "parts.feature-point",
+      "repeatable": true
+    },
+    "closing": {
+      "type": "string"
+    },
+    "closingLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "pointStyle": {
+      "type": "enumeration",
+      "enum": [
+        "ticks",
+        "none"
+      ],
+      "default": "ticks"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "split",
+        "cards"
+      ],
+      "default": "image"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "photoLabel": {
+      "type": "string"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "light_blue",
+        "cream",
+        "white"
+      ],
+      "default": "light_blue"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

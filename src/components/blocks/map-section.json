@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_blocks_map_sections",
+  "info": {
+    "displayName": "Map / service area",
+    "description": "Service-area map or an embed, with location links or towns",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "media": {
+      "type": "enumeration",
+      "enum": [
+        "service_area",
+        "embed",
+        "placeholder"
+      ],
+      "default": "service_area"
+    },
+    "embedUrl": {
+      "type": "string"
+    },
+    "mediaLabel": {
+      "type": "string"
+    },
+    "mediaTitle": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "places": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "cream",
+        "white",
+        "light_blue"
+      ],
+      "default": "cream"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

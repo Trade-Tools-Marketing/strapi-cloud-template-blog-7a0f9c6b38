@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_parts_feature_points",
+  "info": {
+    "displayName": "Feature point",
+    "description": "Bold title + one line",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "lead": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "collectionName": "components_blocks_call_bands",
+  "info": {
+    "displayName": "Call band (+ callback form)",
+    "description": "Call-to-action band with an optional \"call me back\" form",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "showSecondaryButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "secondaryButton": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "link": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoName": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "full",
+        "compact"
+      ],
+      "default": "full"
+    },
+    "form": {
+      "type": "boolean",
+      "default": true
+    },
+    "formId": {
+      "type": "string"
+    },
+    "formHeading": {
+      "type": "string"
+    },
+    "formIntro": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "component",
+      "component": "parts.form-field",
+      "repeatable": true
+    },
+    "showMemberCheckbox": {
+      "type": "boolean",
+      "default": true
+    },
+    "checkboxLabel": {
+      "type": "string"
+    },
+    "showMarketingOptIn": {
+      "type": "boolean",
+      "default": true
+    },
+    "marketingLabel": {
+      "type": "text"
+    },
+    "privacyLink": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": false
+    },
+    "consent": {
+      "type": "string"
+    },
+    "sendLabel": {
+      "type": "string"
+    },
+    "sendingLabel": {
+      "type": "string"
+    },
+    "sentTitle": {
+      "type": "string"
+    },
+    "sentMessage": {
+      "type": "string"
+    },
+    "failedMessage": {
+      "type": "string"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "navy",
+        "light_blue"
+      ],
+      "default": "navy"
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "collectionName": "components_global_headers",
+  "info": {
+    "displayName": "Header",
+    "description": "Site header, desktop menus and phone menu",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "component": "parts.nav-link",
+      "repeatable": true
+    },
+    "megaMenu": {
+      "type": "component",
+      "component": "parts.mega-column",
+      "repeatable": true
+    },
+    "locationsMenu": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "megaFooter": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "showFeatured": {
+      "type": "boolean",
+      "default": true
+    },
+    "featured": {
+      "type": "component",
+      "component": "parts.featured-tile",
+      "repeatable": false
+    },
+    "bookLabel": {
+      "type": "string",
+      "default": "Book online"
+    },
+    "mobileServices": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "mobileLocations": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "mobileLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "showMobileNote": {
+      "type": "boolean",
+      "default": true
+    },
+    "mobileNote": {
+      "type": "string",
+      "default": "Calls answered 24/7"
+    },
+    "showAnnouncement": {
+      "type": "boolean",
+      "default": false
+    },
+    "announcement": {
+      "type": "component",
+      "component": "global.announcement-bar",
+      "repeatable": false
+    }
+  }
+}

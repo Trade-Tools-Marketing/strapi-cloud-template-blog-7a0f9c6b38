@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_parts_offer_cards",
+  "info": {
+    "displayName": "Offer card",
+    "description": "A single offer",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "master",
+        "detailed"
+      ],
+      "default": "master"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageLabel": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "buttonVariant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary"
+      ],
+      "default": "primary"
+    }
+  }
+}

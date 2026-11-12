@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_blocks_card_grids",
+  "info": {
+    "displayName": "Card grid",
+    "description": "Grid of service or photo cards",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "parts.card-item",
+      "repeatable": true
+    },
+    "cardStyle": {
+      "type": "enumeration",
+      "enum": [
+        "service",
+        "photo"
+      ],
+      "default": "service"
+    },
+    "cardVariant": {
+      "type": "enumeration",
+      "enum": [
+        "tappable",
+        "info"
+      ],
+      "default": "tappable"
+    },
+    "maxColumns": {
+      "type": "integer",
+      "default": 5
+    },
+    "lastRow": {
+      "type": "enumeration",
+      "enum": [
+        "stretch",
+        "center"
+      ],
+      "default": "stretch"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "cream",
+        "white",
+        "light_blue"
+      ],
+      "default": "cream"
+    }
+  }
+}

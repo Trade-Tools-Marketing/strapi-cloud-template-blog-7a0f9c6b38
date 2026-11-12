@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_trust_bars",
+  "info": {
+    "displayName": "Trust bar",
+    "description": "Navy card with 3–5 ticked selling points and the paw badge, right under the hero",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "points": {
+      "type": "component",
+      "component": "shared.text-item",
+      "repeatable": true
+    },
+    "warrantyHref": {
+      "type": "string",
+      "default": "/warranty/"
+    },
+    "linkWarranty": {
+      "type": "boolean",
+      "default": true
+    },
+    "badge": {
+      "type": "boolean",
+      "default": true
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "cream",
+        "white"
+      ],
+      "default": "cream"
+    }
+  }
+}

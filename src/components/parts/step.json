@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_parts_steps",
+  "info": {
+    "displayName": "Step",
+    "description": "Numbered step",
+    "icon": "puzzle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

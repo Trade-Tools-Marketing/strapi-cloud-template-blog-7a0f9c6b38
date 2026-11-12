@@ -5,31 +5,60 @@
     "singularName": "global",
     "pluralName": "globals",
     "displayName": "Global",
-    "description": "Define global settings"
+    "description": "Set once for the whole site"
   },
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
   "attributes": {
-    "siteName": {
+    "phone": {
+      "type": "string",
+      "required": true,
+      "default": "(778) 486-4772"
+    },
+    "callHref": {
+      "type": "string",
+      "required": true,
+      "default": "tel:+17784864772"
+    },
+    "bookHref": {
+      "type": "string",
+      "required": true,
+      "default": "/contact/#book"
+    },
+    "googleRating": {
+      "type": "string",
+      "required": true,
+      "default": "4.7"
+    },
+    "googleReviewCount": {
+      "type": "string",
+      "required": true,
+      "default": "2,800+"
+    },
+    "googleReviewsUrl": {
       "type": "string",
       "required": true
     },
-    "favicon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images", "files", "videos"]
-    },
-    "siteDescription": {
-      "type": "text",
-      "required": true
-    },
-    "defaultSeo": {
+    "header": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
+      "component": "global.header",
+      "repeatable": false
+    },
+    "footer": {
+      "type": "component",
+      "component": "global.footer",
+      "repeatable": false
+    },
+    "phoneBar": {
+      "type": "component",
+      "component": "global.phone-bar",
+      "repeatable": false
+    },
+    "cookieBanner": {
+      "type": "component",
+      "component": "global.cookie-banner",
+      "repeatable": false
     }
   }
 }

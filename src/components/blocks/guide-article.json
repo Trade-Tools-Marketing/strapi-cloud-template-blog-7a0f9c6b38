@@ -1,0 +1,93 @@
+{
+  "collectionName": "components_blocks_guide_articles",
+  "info": {
+    "displayName": "Article (guide or legal page)",
+    "description": "Long-form article with short answer, body, related links and a compact call band",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": "Guide"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "updated": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageLabel": {
+      "type": "string"
+    },
+    "video": {
+      "type": "component",
+      "component": "parts.video",
+      "repeatable": false
+    },
+    "showShortAnswer": {
+      "type": "boolean",
+      "default": true
+    },
+    "shortAnswerLabel": {
+      "type": "string",
+      "default": "Short answer"
+    },
+    "shortAnswer": {
+      "type": "text"
+    },
+    "sections": {
+      "type": "component",
+      "component": "parts.article-section",
+      "repeatable": true
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "button": {
+      "type": "component",
+      "component": "shared.button",
+      "repeatable": false
+    },
+    "relatedHeading": {
+      "type": "string"
+    },
+    "related": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
+    "showCallBand": {
+      "type": "boolean",
+      "default": true
+    },
+    "callBandBackground": {
+      "type": "enumeration",
+      "enum": [
+        "navy",
+        "light_blue"
+      ],
+      "default": "navy"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "cream"
+      ],
+      "default": "white"
+    }
+  }
+}
